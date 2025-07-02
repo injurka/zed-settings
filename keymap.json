@@ -1,0 +1,29 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift-z": "project_panel::ToggleFocus",
+      "shift-cmd-z": "workspace::Open",
+      "ctrl-shift-alt-z": "task::Rerun",
+      "ctrl-shift-ë": "workspace::NewTerminal",
+      "ctrl-shift-q": "workspace::CloseWindow"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k": "editor::FoldAll",
+      "shift-enter": "editor::NewlineBelow",
+      "ctrl-enter": "editor::NewlineAbove",
+      "ctrl-shift-w": "pane::CloseActiveItem",
+      "shift-.": "editor::ToggleCodeActions"
+    }
+  }
+]
