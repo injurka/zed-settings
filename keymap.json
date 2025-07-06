@@ -13,7 +13,7 @@
       "shift-cmd-z": "workspace::Open",
       "ctrl-shift-alt-z": "task::Rerun",
       "ctrl-shift-ë": "workspace::NewTerminal",
-      "ctrl-shift-q": "workspace::CloseWindow"
+      "ctrl-shift-q": "workspace::CloseWindow",
     }
   },
   {
@@ -23,7 +23,8 @@
       "shift-enter": "editor::NewlineBelow",
       "ctrl-enter": "editor::NewlineAbove",
       "ctrl-shift-w": "pane::CloseActiveItem",
-      "shift-.": "editor::ToggleCodeActions"
+      "shift-.": "editor::ToggleCodeActions",
+      "ctrl-shift-l": "editor::ShowSignatureHelp"
     }
   }
 ]

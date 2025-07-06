@@ -1,53 +1,62 @@
 {
   // --- Общие настройки и UI ---
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "agent": {
     "play_sound_when_agent_done": true,
     "model_parameters": [],
     "always_allow_tool_actions": true,
     "version": "2"
   },
+  "minimap": {
+    "show": "always"
+  },
+  "auto_signature_help": true,
   "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
-    "light": "Vitesse Refined Light Soft",
-    "dark": "Vitesse Refined Light Soft"
+    "light": "Zedokai Light",
+    "dark": "Zedokai Light"
   },
   "ui_font_size": 16,
   "ui_font_family": "Maple Mono",
-
   // --- Настройки редактора (Buffer) ---
   "buffer_font_family": "Maple Mono",
-  "buffer_font_size": 18, // Как в твоем VSCode
+  "buffer_font_size": 18,
   "buffer_font_features": {
     "calt": true,
-    "liga": true // Включаем лигатуры
+    "liga": true
   },
-  "tab_size": 2, // Как в твоем VSCode
+  "tab_size": 2,
   "on_focus_change": "on",
   "format_on_save": "on",
   "format_on_paste": true,
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "autosave": "on_focus_change",
   "ensure_final_newline_on_save": true,
-  "default_line_ending": "lf", // Аналог files.eol: "\n"
-  "sticky_header": "on", // Аналог editor.stickyScroll.enabled
+  "default_line_ending": "lf",
+  "sticky_header": "on",
   "scrollbar": {
-    "show": "always" // В Zed нет autohide для миникарты, можно либо всегда показывать, либо никогда
+    "show": "always"
   },
   "indent_guides": {
-    "enabled": true // Аналог editor.guides.bracketPairs
+    "enabled": true
   },
   "bracket_pair_colorization": {
-    "enabled": true // Дополнительная настройка для подсветки скобок
+    "enabled": true
   },
-
   // --- Языки и форматирование ---
-  // Zed автоматически подхватывает Prettier/ESLint из node_modules.
-  // Эта секция нужна для более тонкой настройки.
   "languages": {
     "JavaScript": {
       "format_on_save": "on",
       "code_actions_on_format": {
-        "source.fixAll.eslint": true // Аналог "source.fixAll.eslint": "explicit"
+        "source.fixAll.eslint": true
       }
     },
     "TypeScript": {
@@ -69,10 +78,9 @@
       // Для Markdown в Zed встроенный форматер
     }
   },
-
   // --- Интеграции ---
   "copilot": {
-    "disabled": false
+    "disabled": true
   },
   "git": {
     "auto_fetch": "on"
@@ -81,7 +89,6 @@
     "indent_size": 10,
     "file_nesting": "on"
   },
-
   // --- Терминал ---
   "terminal": {
     "font_family": "Maple Mono",
@@ -89,9 +96,7 @@
     "line_height": "standard",
     "blinking": "on"
   },
-
   // --- Исключение файлов ---
-  // Объединяем search.exclude и files.exclude
   "exclude_files": [
     ".git",
     ".github",
