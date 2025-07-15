@@ -18,7 +18,7 @@
   "theme": {
     "mode": "system",
     "light": "Zedokai Light",
-    "dark": "Zedokai Light"
+    "dark": "Zedokai Light (Custom)"
   },
   "ui_font_size": 16,
   "ui_font_family": "Maple Mono",
